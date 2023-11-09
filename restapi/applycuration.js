@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/penguins", (req, res) => {
-    res.send()
+    res.send(penguins.list())
 })
 
 app.listen("8080", () => console.log("serwer na 8080"));
