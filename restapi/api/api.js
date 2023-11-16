@@ -13,4 +13,6 @@ router.get("/api/penguins/:id", (req, res) => {
 
 router.post("/api/penguins", (req, res) => {
     res.json(penguins.add(req.body));
-})
+});
+
+module.exports = router;
