@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Skipper",
+        "skill": "",
+        "rank": ""
+    },
+    {
+        "id": 2,
+        "name": "Kowalski",
+        "skill": "",
+        "rank": ""
+    },
+    {
+        "id": 3,
+        "name": "Rico",
+        "skill": "",
+        "rank": ""
+    },
+    {
+        "id": 4,
+        "name": "Szeregowy",
+        "skill": "",
+        "rank": ""
+    },
+    {
+        "name": "Michcio",
+        "skill": "kręcenie śniegiem",
+        "rank": "rekrut",
+        "id": 5
+    }
+]
