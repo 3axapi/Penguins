@@ -6,13 +6,22 @@ const penguins = require("./penguinsDB");
 function addPenguin (penguinData) {
     penguinData.id = getNextId();
     penguins.push(penguinData);
-    save();
 
+    save();
     return getPenguin(penguinData.id);
 }
 
 function copy (obj) {
     return JSON.parse(JSON.stringify(obj));
+}
+
+function deletePenguin (idPenguin) {
+    isPenguin = +idPenguin;
+    toReturn = penguins.find(penguin => penguin.id === isPenguin);
+    penguins = penguins.filter(penguin => penguin.id !== isPenguin);
+
+    save();
+    return toReturn;
 }
 
 function listPenguins() {
@@ -47,5 +56,6 @@ function save () {
 module.exports = {
     list: listPenguins,
     get: getPenguin,
-    add: addPenguin
+    add: addPenguin,
+    delete: deletePenguin
 }
